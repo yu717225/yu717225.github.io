@@ -1,0 +1,67 @@
+<!DOCTYPE html>  <!-- HTML5 문서임을 알려줌 -->
+<html>
+    
+<head>
+    <meta charset="utf-8">  <!-- 한글이 정상적으로 보이도록 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- 모바일에서 콘텐츠 크기 최적화 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>index.html</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"><a href="index.html">POHANG</a></div>
+
+
+</body>
+
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <body>
+    <nav>
+        <ul class="top-nav">
+            <li class="button"><a href="index.html">영일대해수욕장</a></li>
+            <li class="button"><a href="index.html">호미곶</a></li>
+            <li class="button lastBtn"><a href="index.html">보경사</a></li>
+            <li class="button"><a href="index.html">스페이스워크</a></li>
+            <li class="button"><a href="index.html">구륭포 근대 역사거리</a></li>
+        </ul>
+      </nav>
+
+
+        <div id="content">
+            <div id="bigImages">
+                <img id="big" src="images1/img_1.png" width="700">
+
+            </div>
+            <div id="smallImages">
+                <img class="small" src="images1/img_1.png" width="195">
+                <img class="small" src="images1/img_2.png" width="195">
+                <img class="small" src="images1/img_3.png" width="195">
+                <img class="small" src="images1/img_4.png" width="195">
+                <img class="small" src="images1/img_5.png" width="195">
+                <img class="small" src="images1/img_6.png" width="195">
+                <img class="small" src="images1/img_7.png" width="195">
+            </div>
+        </div>
+    
+        <script>
+        var bigPic = document.querySelector("#big");
+    var smallPics = document.querySelectorAll(".small");
+    
+    for(var i = 0 ; i < smallPics.length ; i++){
+        smallPics[i].onclick = changepic;
+    }
+    
+    function changepic(){
+        var smallPicAttribute = this.getAttribute("src");
+        bigPic.setAttribute("src", smallPicAttribute);
+    }
+    </script>
+
+    </body>
+    </html>
+ 
+
+</html>
